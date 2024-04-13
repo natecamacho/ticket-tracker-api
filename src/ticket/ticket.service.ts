@@ -12,7 +12,6 @@ export class TicketService {
   ) {}
 
   async create(createTicketDto: CreateTicketDto) {
-    console.log(JSON.stringify(createTicketDto));
     await this.ticketModel.create({
       title: createTicketDto.title,
       description: createTicketDto.description,
